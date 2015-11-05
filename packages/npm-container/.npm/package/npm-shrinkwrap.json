@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "fbgraph": {
+      "version": "http://registry.npmjs.org/fbgraph/-/fbgraph-0.2.7.tgz",
+      "dependencies": {
+        "request": {
+          "version": "http://registry.npmjs.org/request/-/request-2.11.4.tgz",
+          "dependencies": {
+            "form-data": {
+              "version": "0.0.3",
+              "dependencies": {
+                "combined-stream": {
+                  "version": "0.0.3",
+                  "dependencies": {
+                    "delayed-stream": {
+                      "version": "0.0.5"
+                    }
+                  }
+                },
+                "async": {
+                  "version": "0.1.9"
+                }
+              }
+            },
+            "mime": {
+              "version": "1.2.7"
+            }
+          }
+        },
+        "qs": {
+          "version": "http://registry.npmjs.org/qs/-/qs-0.5.6.tgz"
+        }
+      }
+    }
+  }
+}
