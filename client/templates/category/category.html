@@ -1,0 +1,22 @@
+<template name="category">
+
+ <h5 class="sidebar-nav-title">Categories <a class="action-link" href="#"><i class="glyphicon glyphicon-plus"></i></a></h5>
+            <!-- some styled links in sidebar. ready to use as links to email folders, projects, groups, etc -->
+            <ul class="sidebar-labels">
+
+
+               {{#each categories}}
+                <li>
+                    <a href="#">                        
+                        <i class="fa fa-circle text-warning"></i>
+                        <span class="label-name">{{name}}</span>
+                    </a>
+                </li>
+                
+                {{/each}}
+               
+
+
+
+            </ul>
+ </template>

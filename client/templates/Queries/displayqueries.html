@@ -1,0 +1,50 @@
+<template name="displayqueries">
+    <h2 class="page-title">Dashboard <small>Statistics and more</small></h2>
+    <section class="widget large">
+        <header>
+            <h4>
+                            Feed
+                            <span class="label label-success">412</span>
+                        </h4>
+            <div class="actions">
+                <button class="btn btn-transparent btn-xs">Show All <i class="fa fa-arrow-down"></i></button>
+            </div>
+        </header>
+        <div class="body">
+            <div class="slimScrollDiv" style="position: relative; overflow: scroll; width: auto; height: 280px;">
+                <div id="feed" class="feed" style="overflow: scroll; width: auto; height: 280px;">
+                    <div class="wrapper">
+                        <div class="vertical-line"></div>
+
+                        <div id="scroll" style="height:auto;">
+                        {{#each queries}}
+                        <section class="feed-item">
+                            <div class="icon pull-left">
+                                <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="feed-item-body">
+                                <div class="text">
+                                    <a href="#"> The only country in the world which does not give a rat's ass about USA.</a>
+                                    <br/> commented on <a href="#">What Makes Good Code Good</a>.
+                                </div>
+                                <div class="time pull-left">
+                                    1. Brilliant in Chess. 2. The only country in the world which does not give a rat's ass about USA. 3. Freezing temperatures. 4. Friend to India. 5 . Recently retaliated against ISIS, when US was just beating around the bush since a long time. 6. Makes killer ammunition. 7. Widespread Russian Mafia. 8. Maria Sharapova. 9. Regular visitors to Goa. 10. A country filled up with high quality software programmers. 11. A country with whom terrorists will not mess.
+                                </div>
+                            </div>
+                        </section>
+                        {{/each}}
+                        </div>
+
+                         {{#if moreResults}}
+                        <div id="showMoreResults" style="margin-left: 25px;">
+                            <span class="loading">Loading...</span>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="slimScrollBar" style="width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 208.511px; background: rgb(0, 0, 0);"></div>
+                <div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: block; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+            </div>
+        </div>
+    </section>
+</template>

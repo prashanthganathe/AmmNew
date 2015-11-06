@@ -27,7 +27,7 @@ Meteor.navigateTo = function(path) {
         }
     });
 
-var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs'];
+var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard'];
 
 _.map(staticmainlayoutpages, function(item, index) {
     FlowRouter.route('/' + item, {
@@ -37,6 +37,17 @@ _.map(staticmainlayoutpages, function(item, index) {
             });
         }
     });
+});
+
+
+FlowRouter.route('/infiniteExample', {
+    subscriptions: function(params) {  
+    },
+    action: function(params) {
+        BlazeLayout.render('mainlayout', {
+                content: 'infiniteExample'
+            });
+    }
 });
 
 
