@@ -48,6 +48,8 @@ easy:search
 aldeed:collection2
 mrt:moment
 twbs:bootstrap
+tsega:bootstrap3-datetimepicker
+
 mizzao:user-status
 mizzao:timesync
 reactive-var

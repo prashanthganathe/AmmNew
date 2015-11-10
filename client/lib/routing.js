@@ -27,7 +27,7 @@ Meteor.navigateTo = function(path) {
         }
     });
 
-var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard'];
+var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard', 'profiletab'];
 
 _.map(staticmainlayoutpages, function(item, index) {
     FlowRouter.route('/' + item, {

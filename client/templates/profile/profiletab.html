@@ -1,0 +1,33 @@
+<template name="profiletab">
+     <div class="row">
+       <div class="col-sm-8 col-sm-offset-2">
+    <section class="widget widget-tabs">
+        <header>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#profilecard" data-toggle="tab">ProfileCard</a></li>               
+                <li><a href="#experience" data-toggle="tab"> Skills/Experience</a></li>
+                <li><a href="#qaprofile" data-toggle="tab">Q&A</a></li>
+                <li><a href="#feedback" data-toggle="tab">Feedback</a></li>
+                <li><a href="#availability" data-toggle="tab">Availibility</a></li>
+            </ul>
+        </header>
+        <div class="body tab-content">
+            <div id="profilecard" class="tab-pane active clearfix">
+               <!--  <h5 class="tab-header"><span class="label label-primary"><i class="fa fa-facebook"></i></span> Last logged-in users</h5>  -->
+               <div class="row">
+                {{> profilecard}}
+                </div>
+            </div>           
+            <div id="experience" class="tab-pane">
+            </div>
+            <div id="qaprofile" class="tab-pane">
+            </div>
+            <div id="feedback" class="tab-pane">
+            </div>
+            <div id="availability" class="tab-pane">
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>	
+</template>
