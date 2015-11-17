@@ -11,9 +11,29 @@ Template.ask.helpers({
 });
 
 Template.ask.events({
-    "click .master": function(e) {
-        var selCateogry = e.target.text;
-        $('#tagitem').text(selCateogry);
+    "click #btnprof": function(e) {
+        //var selCateogry = e.target.text;
+        //$('#tagitem').text(selCateogry);
+        
+        var questionObj={};
+        questionObj.title=$('#qtitle').val();
+        questionObj.question=$('#question').val();
+        questionObj.category= Session.get('prof');
+        questionObj.subcategory= Session.get('prof');
+        if($("#isAnnonymous").is(':checked'))
+        {
+        questionObj.isanonymous= true;
+        }
+        else
+        {
+        	questionObj.isanonymous= false;
+        }
+
+
+
+        //Queries/o\
+        var status = Queries.insert(questionObj);
+
     }
 
 });

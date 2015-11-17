@@ -27,7 +27,20 @@ Meteor.navigateTo = function(path) {
         }
     });
 
-var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard', 'profiletab'];
+ FlowRouter.route('/ask', {
+        action: function() {
+            BlazeLayout.render('', {
+                content: 'ask'
+            });
+        }
+    });
+
+
+
+
+
+
+var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard', 'profiletab' , 'collage'];
 
 _.map(staticmainlayoutpages, function(item, index) {
     FlowRouter.route('/' + item, {

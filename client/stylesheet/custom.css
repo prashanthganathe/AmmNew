@@ -120,3 +120,7 @@ body{
      padding: 0px;
 
     }
+
+.widget-tabs .body{
+    padding:5px,5px !important;
+}

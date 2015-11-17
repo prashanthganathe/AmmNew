@@ -9,14 +9,36 @@ Template.profilecard.onRendered(function() {
 Template.profilecard.events({
   'submit form': function(e, b){
 
-  	var profile={};
-  	profile.userId= Meteor.userId();
+
+
+
+  	function SaveGeneral(general)
+  	{
+  		var profile={};
+  		profile.userId= Meteor.userId();
+  		profile.general= general;
+
+
+  		 Profiles.insert(profile, {validationContext: 'insertForm'}, function(error, result) {
+      if(!error){
+        // $('#addItemForm').find('input:text').val('');
+        // $('#itemStore').focus();
+        console.log(error);
+      }
+      else
+      {
+      	console.log(error);
+      }
+    });
+  	}
+
+  	
 
   	var general = {};
   	general.prefix =$('#prefix').val();
     general.fname=$('#first-name').val();
     general.lname =$('#last-name').val();       
-    general.profileurl=$('#picurl').val();
+    
     general.gender=$('#').val();
     general.dob=$('#dob').val();
     general.email=$('#email').val();
@@ -27,16 +49,26 @@ Template.profilecard.events({
     general.state=$('#state').val();
     general.country=$('#country').val();
 
-  	profile.general= general;
+
+
+    var files = $("input.file_bag")[0].files;
+
+        S3.upload({
+                files:files,
+                path:"profile"
+            },function(e,r){
+            	general.profileurl=r.url;
+                console.log(r);
+
+                SaveGeneral(general);
+        });
+
+
+
+ 
     
     
-    Profiles.insert(profile, {validationContext: 'insertForm'}, function(error, result) {
-      if(!error){
-        // $('#addItemForm').find('input:text').val('');
-        // $('#itemStore').focus();
-        conso
-      }
-    });
+   
     
     return false;
   }

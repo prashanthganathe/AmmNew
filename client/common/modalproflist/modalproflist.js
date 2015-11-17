@@ -3,6 +3,32 @@ Template.modalproflist.helpers({
         var proflist = [];
 
         proflist.push({
+            name: 'Business',
+            expertise: ['Entrepreneur', 'Ideas', 'Contacts', 'Opportunities', 'Marketing','Sales']
+        });
+
+        proflist.push({
+            name: 'Design',
+            expertise: ['Web', 'PPT', 'Interior', 'Opportunities', 'Marketing','Sales']
+        });
+
+        proflist.push({
+            name: 'Health & Fitness',
+            expertise: ['Web', 'PPT', 'Interior', 'Opportunities', 'Marketing','Sales']
+        });
+
+        proflist.push({
+            name: 'Teacher Training',
+            expertise: ['Forgeign Language', 'Tuition for CBSE', 'BE', 'Mathematics for XII']
+        });
+
+        proflist.push({
+            name: 'IT and Software',
+            expertise: ['NodeJS', 'SQL', 'Python', 'C#' , 'Android' , 'IOS' , 'JS' , 'Big Data' , 'Java']
+        });
+
+
+        proflist.push({
             name: 'Doctor',
             expertise: ['ENT', 'Ortho', 'Cardio']
         });
