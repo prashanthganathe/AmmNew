@@ -40,7 +40,7 @@ Meteor.navigateTo = function(path) {
 
 
 
-var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard', 'profiletab' , 'collage'];
+var staticmainlayoutpages= ['landing','forgotpassword','chatlog', 'fb','tabs' ,'dashboard', 'staticdashboard', 'profiletab' , 'collage' ,'register'];
 
 _.map(staticmainlayoutpages, function(item, index) {
     FlowRouter.route('/' + item, {

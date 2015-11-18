@@ -4,38 +4,41 @@
 
 
 /* Social Media */
-.facebook {	background: #3280e7; }
-.facebook:hover { background: #134fa0; }
-.twitter { background: #32c8de;}
-.twitter:hover {	background: #188392;}
-.google-plus {background: #f96f4a;}
-.google-plus:hover {	background: #eb6440;}
-.linkedin  {	background: #729fda;}
-.linkedin:hover {background: #3069b6;}
-.pinterest {	background: #ed5441;}
-.pinterest:hover { background: #b72411;}
-.dropbox {background: #32c8de;}
-.dropbox:hover {	background: #188392;}
-.bitcoin {background: #f8a841;}
-.bitcoin:hover {	background: #cc7607;}
-.foursquare {background: #22bed4;}
-.foursquare:hover {background: #146f7c;}
-.flickr { background: #ff61e7;}
-.flickr:hover {	background: #fa00d4;}
-.github {background: #666666;}
-.github:hover {	background: #333333;}
-.instagram {	background: #d6917a;}
-.instagram:hover {background: #b35637;}
-.skype {background: #32c8de;}
-.skype:hover {background: #188392;}
-.tumblr {background: #84a1c8;}
-.tumblr:hover {background: #476d9f;}
-.vimeo {background: #32c8de;}
-.vimeo:hover {background: #188392;}
-.dribbble{background: #ff2edf;}
-.dribbble:hover {background: #c700a9;}
-.youtube {background: #ed5441;}
-.youtube:hover {	background: #b72411;}
+.item001 {	background: #3280e7; }
+.item001:hover { background: #134fa0; }
+.item002 { background: #32c8de;}
+.item002:hover {	background: #188392;}
+.item003 {background: #f96f4a;}
+.item003:hover {	background: #eb6440;}
+.item004  {	background: #729fda;}
+.item004:hover {background: #3069b6;}
+.item005 {	background: #ed5441;}
+.item005:hover { background: #b72411;}
+.item006 {background: #32c8de;}
+.item006:hover {	background: #188392;}
+.item007 {background: #f8a841;}
+.item007:hover {	background: #cc7607;}
+.item008 {background: #22bed4;}
+.item008:hover {background: #146f7c;}
+.item009 { background: #ff61e7;}
+.item009:hover {	background: #fa00d4;}
+.item010 {background: #666666;}
+.item010:hover {	background: #333333;}
+.item011 {	background: #d6917a;}
+.item011:hover {background: #b35637;}
+.item012 {background: #32c8de;}
+.item012:hover {background: #188392;}
+.item013 {background: #84a1c8;}
+.item013:hover {background: #476d9f;}
+.item014 {background: #32c8de;}
+.item014:hover {background: #188392;}
+.item015{background: #ff2edf;}
+.item015:hover {background: #c700a9;}
+.item016 {background: #ed5441;}
+.item016:hover {	background: #b72411;}
+
+.item017 {background: #ed5441;}
+.item017:hover {	background: #b72411;}
 
 
 .ui-44{
@@ -56,100 +59,116 @@
 			transition: all 0.35s ease-out;
 }
 .social-collage .social-item i { color: #fff; }
-.social-collage .facebook { 
+.social-collage .item001 { 
 	top: 0;
 	left: 0;
 	z-index: 115;
 	width: 180px;
 	height: 200px;
 	color: #fff;
-	font-size: 100px;
+	font-size: 18px; font-weight:bold;
 	line-height: 200px;
 }
-.social-collage .google-plus {
+.social-collage .item002 {
 	top: 100%;
 	left: 100%;
 	z-index: 6;
-	width: 90px;
+	width: 160px;
 	height: 100px;
 	line-height: 100px;
 	margin-left: -40px;
-	font-size: 50px;
+	font-size: 18px; font-weight:bold;
 }
-.social-collage .linkedin {
+.social-collage .item003 {
 	top: 100%;
 	right: 40px;
 	z-index: 7;
-	width: 87px;
+	width: 117px;
 	height: 110px;
-	font-size: 40px;
+	font-size: 18px; font-weight:bold;
 	line-height: 110px;
 }
-.social-collage .twitter {
+.social-collage .item004 {
 	top: 20px;
 	right: 100%;
 	z-index: 8;
 	width: 120px;
 	height: 130px;
-	font-size: 50px;
+	font-size: 18px; font-weight:bold;
 	line-height: 130px;
 }
-.social-collage .pinterest {
+.social-collage .item005 {
 	bottom: 100%;
 	right: 100%;
 	z-index: 9;
 	width: 80px;
 	height: 90px;
 	margin-bottom: -20px;
-	font-size: 35px;
+	font-size: 18px; font-weight:bold;
 	line-height: 90px;
 }
-.social-collage .github {
+.social-collage .item006 {
 	bottom: 0;
 	left: 100%;
 	z-index: 10;
 	width: 80px;
 	height: 80px;
-	font-size: 35px;
+	font-size: 18px; font-weight:bold;
 	line-height: 80px;
 }
-.social-collage .instagram {
+.social-collage .item007 {
 	bottom: 80px;
 	left: 100%;
 	z-index: 10;
 	width: 130px;
 	height: 150px;
-	font-size: 80px;
+	font-size: 18px; font-weight:bold;
 	line-height: 150px;
 }
-.social-collage .flickr {
+.social-collage .item008 {
 	bottom: 100%;
 	left: 0;
 	z-index: 11;
 	width: 120px;
 	height: 120px;
-	font-size: 50px;
+	font-size: 18px; font-weight:bold;
 	line-height: 120px;
 }
-.social-collage .youtube {
+.social-collage .item009 {
 	top: 150px;
 	right: 100%;
 	z-index: 10;
 	margin-right: -53px;
 	width: 150px;
 	height: 170px;
-	font-size: 80px;
+	font-size: 18px; font-weight:bold;
 	line-height: 170px;
 }
-.social-collage .bitcoin {
+.social-collage .item010 {
 	bottom: 100%;
 	right: 0px;
 	z-index: 10;
 	width: 64px;
 	height: 80px;
 	line-height: 80px;
-	font-size: 27px;
+	font-size: 18px; font-weight:bold;
 }
+
+.social-collage .item011 {
+	    bottom: 100%;
+   
+    z-index: 11;
+    width: 130px;
+    height: 88px;
+    line-height: 85px;
+    font-size: 18px;
+    font-weight: bold;
+        right: -130px;
+}
+
+
+
+
 /* Mobile phones */
 @media (max-width: 480px){
 	.social-collage .social-container  {
@@ -174,7 +193,7 @@
 		display: inline-block;
 		width: 24%;
 		height: auto;
-		font-size: 50px;
+		font-size: 18px; font-weight:bold;
 		line-height: 80px;
 		margin: 0 auto;
 		margin-top: 3px;

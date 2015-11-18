@@ -37,7 +37,7 @@ Template.modalproflist.helpers({
             expertise: ['2 Wheeler', 'Truck', 'Boat']
         });
         proflist.push({
-            name: 'Lawyer',
+            name: 'Lawyer', 
             expertise: ['Civil', 'Criminal', 'Property']
         });
         return proflist;
@@ -48,13 +48,13 @@ Template.modalproflist.events({
     "click .prof": function(e) {
     	var prof= e.target.text;
     	Session.set('prof',prof);
-    	$('#modal-dialog').modal('hide');
+    	//$('#modal-dialog').modal('hide');
     },
      "click .subprof": function(e) {
      	var prof= e.target.text;
      	Session.set('prof',prof);
 
-     	$('#modal-dialog').modal('hide');
+     	//$('#modal-dialog').modal('hide');
 
     },
 });

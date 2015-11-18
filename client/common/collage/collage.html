@@ -1,173 +1,109 @@
 <template name="collage">
-<div class="container collage">
-    <div class="social-collage">
-        <!-- Social icon container -->
-    	<div class="social-container">
-    	
-    		<!-- Facebook -->
-    		<a href="#">
-	    		<div class="social-item facebook">
-	    			<i class="fa fa-facebook"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Google plus -->
-    		<a href="#">
-	    		<div class="social-item google-plus">
-	    			<i class="fa fa-google"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- LinkedIn -->
-    		<a href="#">
-	    		<div class="social-item linkedin">
-	    			<i class="fa fa-linkedin"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Twitter -->
-    		<a href="#">
-	    		<div class="social-item twitter">
-	    			<i class="fa fa-twitter"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Pinterest -->
-    		<a href="#">
-	    		<div class="social-item pinterest">
-	    			<i class="fa fa-pinterest"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Github -->
-    		<a href="#">
-	    		<div class="social-item github">
-	    			<i class="fa fa-github"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Flickr -->
-    		<a href="#">
-    			<div class="social-item flickr">
-    				<i class="fa fa-flickr"></i>
-    			</div>
-    		</a>
-    		
-    		<!-- Instagram -->
-    		<a href="#">
-    			<div class="social-item instagram">
-    				<i class="fa fa-instagram"></i>
-    			</div>
-    		</a>
-    		
-    		<!-- Youtube -->
-    		<a href="#">
-    			<div class="social-item youtube">
-    				<i class="fa fa-youtube"></i>
-    			</div>
-    		</a>
-    		
-    		<!-- Bitcoin -->
-    		<a href="#">
-    			<div class="social-item bitcoin">
-    				<i class="fa fa-bitcoin"></i>
-    			</div>
-    		</a>
-
-		<a href="#">
-	    		<div class="social-item facebook">
-	    			<i class="fa fa-facebook"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Google plus -->
-    		<a href="#">
-	    		<div class="social-item google-plus">
-	    			<i class="fa fa-google"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- LinkedIn -->
-    		<a href="#">
-	    		<div class="social-item linkedin">
-	    			<i class="fa fa-linkedin"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Twitter -->
-    		<a href="#">
-	    		<div class="social-item twitter">
-	    			<i class="fa fa-twitter"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Pinterest -->
-    		<a href="#">
-	    		<div class="social-item pinterest">
-	    			<i class="fa fa-pinterest"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Github -->
-    		<a href="#">
-	    		<div class="social-item github">
-	    			<i class="fa fa-github"></i>
-	    		</div>
-    		</a>
-    		
-    		<!-- Flickr -->
-    		<a href="#">
-    			<div class="social-item flickr">
-    				<i class="fa fa-flickr"></i>
-    			</div>
-    		</a>
-    		
-    		<!-- Instagram -->
-    		<a href="#">
-    			<div class="social-item instagram">
-    				<i class="fa fa-instagram"></i>
-    			</div>
-    		</a>
-    		
-    		<!-- Youtube -->
-    		<a href="#">
-    			<div class="social-item youtube">
-    				<i class="fa fa-youtube"></i>
-    			</div>
-    		</a>
-    		
-    		<!-- Bitcoin -->
-    		<a href="#">
-    			<div class="social-item bitcoin">
-    				<i class="fa fa-bitcoin"></i>
-    			</div>
-    		</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    		
-    	</div>
+    <div class=" collage">
+        <div class="social-collage">
+            <!-- Social icon container -->
+            <div class="social-container">
+                <!--  {{#each getCategories}}
+           {{/each}} -->
+                {{#each getCategories}}
+                <a href="#" data-dismiss="modal">
+                    <div class={{class}}>
+                       
+                           <div data-toggle="modal" data-target="#mySubCategory">{{name}} </div>
+                       <!--  <div id="mySubCategory" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                            {{> modalsubcategory}}
+                        </div> -->
+                    </div>
+                </a>
+                {{/each}}
+                <!-- <a href="#" data-dismiss="modal">
+                <div class="social-item item001">
+                    
+                     Doctor
+                </div>
+            </a>
+            
+        
+            <a href="#">
+                <div class="social-item item002">               
+                    Business
+                </div>
+            </a>
+            
+            
+            <a href="#">
+                <div class="social-item item003">
+                    
+                    Design
+                </div>
+            </a>
+            
+        
+            <a href="#">
+                <div class="social-item item004">
+                    
+                    Fitness
+                </div>
+            </a>
+            
+            
+            <a href="#">
+                <div class="social-item item005">
+                    
+                    Training
+                </div>
+            </a>
+            
+            
+            <a href="#">
+                <div class="social-item item006">
+                    
+                    IT
+                </div>
+            </a>
+            
+        
+            <a href="#">
+                <div class="social-item item007">
+                
+                    Mechanic
+                </div>
+            </a>
+            
+            
+            <a href="#">
+                <div class="social-item item008">                   
+                    Lawyer
+                </div>
+            </a>
+            
+        
+        <a href="#">
+                <div class="social-item item009">
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </a>
+            
+        
+            <a href="#">
+                <div class="social-item item010">
+                    <i class="fa fa-item007"></i>
+                </div>
+            </a>
+ 
+        <a href="#">
+                <div class="social-item item011">
+                    Item1
+                </div>
+            </a>
+            
+             
+            <a href="#">
+                <div class="social-item item012">
+                    <i class="fa fa-google"></i>
+                </div>
+            </a> -->
+            </div>
+        </div>
     </div>
-</div>
 </template>
