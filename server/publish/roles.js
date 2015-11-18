@@ -1,3 +1,4 @@
 Meteor.publish(null, function (){ 
-  return Meteor.roles.find({});
-})
+  return  Meteor.roles.find({});
+});
+

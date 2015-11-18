@@ -9,7 +9,13 @@ Meteor.methods({
             }
 
         });
+    },
 
+    createRole:function(rolename)
+    {
+        var status= Roles.createRole('Manager');
     }
+
+    
 
 });

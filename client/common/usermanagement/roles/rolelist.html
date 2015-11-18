@@ -1,0 +1,101 @@
+<template name="rolelist">
+   
+            
+                <form class="no-margin" action="#" method="get">
+                    <fieldset>
+                          <ul class="news-list news-list-no-hover">
+
+                               {{#each getroles}}
+                                <li>
+                                    
+                                
+
+                                    <div class="news-item-info">
+                                        <div class="name">
+                                        <div class="iphonebadge">{{@index}}</div>
+                                        <a href="#">{{name}}</a>
+
+                                         <div class="options">
+                                             <button type="button" class="close btn-danger" aria-hidden="true">
+                                             <i class="fa fa-times"></i> </button>
+                                        </div>
+                                        </div>   
+
+                                       
+                                    </div>
+                                </li>
+
+                                {{/each}}
+
+
+                               <!--  <li>
+                                    <img src="img/13.jpg" alt="" class="pull-left img-circle">
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Frans Garey</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/3.jpg" alt="" class="pull-left img-circle">
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Erebus Novak</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/2.jpg" alt="" class="pull-left img-circle">
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Leopoldo Reier</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/1.jpg" alt="" class="pull-left img-circle">
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Finees Lund</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                    </fieldset>
+                </form>
+            
+           
+       
+</template>

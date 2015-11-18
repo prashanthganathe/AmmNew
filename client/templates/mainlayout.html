@@ -20,21 +20,20 @@
                             </div>
                         </div>
                     </form>
-
-
-
-
                 </div>
             </div>
-           
         </div>
     </div>
     <div id="wrapper">
         <div class="wrap">
         </div>
         <div class="content container">
-             {{> headmenu}}
-            {{> Template.dynamic template=content}}
+            {{> headmenu}} 
+            {{#if currentUser}} 
+                    {{> Template.dynamic template=content}} 
+            {{else}} 
+                    {{> login}} 
+            {{/if}}
         </div>
     </div>
 </template>

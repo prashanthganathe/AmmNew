@@ -17,6 +17,12 @@ Accounts.onCreateUser(function(options, user) {
     user.profile = options.profile || {};
     //  if (options.profile) {
     //  user.profile = options.profile || {};
+    if (typeof(user.services.google) == "undefined"  && typeof(user.services.google) == "undefined") {
+        user.profile.picture = 'http://www.sonniss.com/wp-content/uploads/edd/2015/08/17797.png';
+        user.profile.email = user.username;
+    }
+
+
 
     if (typeof(user.services.facebook) != "undefined") {
         result = Meteor.http.get("https://graph.facebook.com/me", {
@@ -37,11 +43,7 @@ Accounts.onCreateUser(function(options, user) {
         user.profile.email = user.services.google.email;
     }
 
-      if (typeof(user.services.google) == "undefined"  && typeof(user.services.google) == "undefined") {
-        user.profile.picture = '';
-        user.profile.email = user.username;
-    }
-
+      
 
 
     user.roles = ["User"];
@@ -54,51 +56,10 @@ Accounts.onCreateUser(function(options, user) {
     //user.profile.resources = 0; //Number of resources an account has created
     //user.profile.resourceLimit = 2; //Limit for the number of resources an account can have   
     user.profile.phone = null; //Phone is blank when created
-
-
-
-
-    // }
-
-
-
     //user.roles = {__global_roles__: []};
     //Roles.addUsersToRoles(user._id, ['User','Admin']);
-
     return user;
 });
 
 
-//Accounts.onCreateUser(function(options,user){
-// var accessToken = user.services.github.accessToken,result,profile;
 
-// result = Meteor.http.get("https://api.github.com/user", {
-//     params: {
-//         access_token: accessToken
-//     }
-// });
-
-// if(result.error){
-//     throw result.error
-// }
-
-// profile = _.pick(result.data,
-//     "login",
-//     "name",
-//     "avatar_url",
-//     "url",
-//     "company",
-//     "blog",
-//     "location",
-//     "email",
-//     "bio",
-//     "html_url");
-
-// user.profile = profile;
-
-// return user;
-
-// var userdata=  {name:"Normal User",email:"normal@example.com",roles:[]},
-
-//  Roles.addUsersToRoles(id, userData.roles);
-//});

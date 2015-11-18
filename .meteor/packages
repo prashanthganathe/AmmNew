@@ -61,3 +61,5 @@ npm-container
 stevezhu:fbgraph@=2.0.0
 msavin:mongol
 peerlibrary:aws-sdk
+email
+themeteorchef:jquery-validation

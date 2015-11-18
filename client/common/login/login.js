@@ -1,4 +1,4 @@
-Template.login.onRendered(function (){
+Template.login.onRendered(function() {
 
     if (Meteor.user()) {
         FlowRouter.go('landing');
@@ -20,15 +20,14 @@ Template.login.events({
         // 'user_education_history', 'user_friends', 'user_likes', 'user_photos',
         // 'user_religion_politics', 'user_work_history'];
 
-        Meteor.loginWithFacebook({requestPermissions: ['user_friends', 'read_friendlists', 'email']
+        Meteor.loginWithFacebook({
+            requestPermissions: ['user_friends', 'read_friendlists', 'email']
         }, function(err) {
             if (err) {
                 console.log(err);
                 throw new Meteor.Error("Facebook login failed");
-            }
-            else
-            {
-                FlowRouter.redirect('landing');
+            } else {
+                FlowRouter.redirect('/dashboard');
             }
 
         });
@@ -40,12 +39,16 @@ Template.login.events({
             if (err) {
                 console.log(err);
                 throw new Meteor.Error("Facebook login failed");
-            }
-             else
-            {
-                FlowRouter.go('landing');
+            } else {
+                FlowRouter.go('/dashboard');
             }
 
         });
     }
+
+
+
+
+
+
 });
